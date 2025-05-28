@@ -1,7 +1,10 @@
+import Banner from "@/components/Banner";
 
 
 export default function Home() {
   return (
-   <div>Hello next.js</div>
+   <div>
+    <Banner/>
+   </div>
   );
 }

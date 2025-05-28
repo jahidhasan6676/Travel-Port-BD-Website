@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { useState } from "react";
 import {
   MdDirectionsBus,
@@ -29,7 +28,7 @@ const Navbar = () => {
   return (
     <>
       {/* Main Navbar */}
-      <nav className="border-b sticky top-0 backdrop-blur-sm bg-white z-50">
+      <nav className="border-b border-gray-200 sticky top-0 backdrop-blur-sm bg-white z-50">
         <div className="w-11/12 mx-auto flex justify-between items-center py-3">
           {/* Logo */}
           <div className="flex items-center gap-2">
@@ -93,7 +92,7 @@ const Navbar = () => {
                   My Booking
                 </li>
                 <li className="block px-4 py-2 hover:bg-gray-100">Saved</li>
-                <hr />
+                <hr className="text-gray-200" />
                 <li className="block w-full text-left px-4 py-2 hover:bg-gray-100">
                   Sign Out
                 </li>
